@@ -10,12 +10,28 @@
             color: white;           /* Texto en color blanco */
             font-family: sans-serif;
         }
+        .video-container {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 
     <h2>Hola, mundo</h2>
     <h2>Este es el contenido principal de la página.</h2>
+
+    <!-- Video de YouTube incrustado en la parte inferior -->
+    <div class="video-container">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/r38HzMkc2PM" 
+            title="Reproductor de video de YouTube" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
 
 </body>
 </html>
