@@ -3,34 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de la página</title>
+    <title>Lidia Contreras Rodríguez</title>
     <style>
-        body {
-            background-color: pink; /* Fondo rosa */
-            color: white;           /* Texto en color blanco */
-            font-family: sans-serif;
+        /* Tipografía y reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            background-color: #ffffff; /* Fondo blanco impoluto */
+            color: #111111;           /* Texto negro elegante */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: min-content;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Contenedor principal estilizado */
+        .main-container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Encabezados al estilo de marca de moda */
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 300;           /* Letra fina y ligera */
+            letter-spacing: 2px;        /* Espaciado de letras amplio */
+            text-transform: uppercase;   /* Texto en mayúsculas */
+            margin-bottom: 15px;
+            color: #000000;
+        }
+
+        /* Subtítulo o texto secundario */
+        h2.subtitle {
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #666666;             /* Gris neutro */
+            margin-bottom: 40px;
+            text-transform: none;
+        }
+
+        /* Línea separadora sutil */
+        .divider {
+            width: 50px;
+            height: 1px;
+            background-color: #000000;
+            margin: 0 auto 40px auto;
+        }
+
+        /* Incrustación de video adaptable */
         .video-container {
-            margin-top: 20px;
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra suave */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
     </style>
 </head>
 <body>
 
-    <h2>Hola, mundo</h2>
-    <h2>Este es el contenido principal de la página.</h2>
-
-    <!-- Video de YouTube incrustado en la parte inferior -->
-    <div class="video-container">
-        <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/r38HzMkc2PM" 
-            title="Reproductor de video de YouTube" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
+    <div class="main-container">
+        <!-- Saludo y nombre con estética de marca -->
+        <h2>Lidia Contreras Rodríguez</h2>
+        <div class="divider"></div>
+        <h2 class="subtitle">Este es
     </div>
 
 </body>
